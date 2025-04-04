@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette Generator</title>
+    <link rel="icon" type="image/png" href="favicn.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-section">
+        <div class="container">
+            <div class="top-section">
+                <div class="harmony-container">
+                    <select id="harmony-select">
+                        <option value="monochromatic">Monochromatic</option>
+                        <option value="analogous">Analogous</option>
+                        <option value="complementary">Complementary</option>
+                        <option value="split-complementary">Split-complementary</option>
+                        <option value="triadic">Triadic</option>
+                        <option value="tetradic">Tetradic</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wheel-container">
+                <div id="color-wheel-container">
+                    <canvas id="color-wheel" width="300" height="300"></canvas>
+                    <div id="color-indicator"></div>
+                </div>
+            </div>
+            <div class="details-container">
+                <div id="color-details"></div>
+                <div id="selected-color-box">
+                    <input type="color" id="color-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="harmony-section">
+            <div class="harmony-plt">
+                <div class="palette-container" id="palette"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="palette-newsection">
+        <div id="custom-palette"></div>
+        <div class="button-container">
+            <button id="reset-btn">Reset</button>
+            <button id="download-btn">Download Palette</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made with ❤️ by Debmalya</p>
+    </div>
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
